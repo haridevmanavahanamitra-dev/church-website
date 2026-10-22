@@ -1,0 +1,224 @@
+<?php
+$pageTitle = "About Us - Adon Gospel Church Ministry";
+include 'inc/header.php';
+?>
+
+<!-- <div class="page-hero">
+    <h1>About Adon Gospel Church Ministry</h1>
+    <div class="breadcrumb"><a href="index.php">Home</a> <i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> About</div>
+</div> -->
+
+<!-- ===== INTRO SECTION ===== -->
+<section class="section">
+    <div class="container">
+        <div class="about-intro-grid">
+            <div class="reveal-left">
+                <div class="about-image-main">
+                    <!-- ✅ IMAGE HEIGHT INCREASED to 420px -->
+                    <img 
+                        src="images/photo-1548625149-fc4a29cf7092.avif" 
+                        alt="Adon Gospel Church Ministry"
+                        style="height:420px;width:100%;object-fit:cover;"
+                    >
+                </div>
+            </div>
+            <div class="reveal-right">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title" style="text-align:left;">Following Christ, Serving India</h2>
+                
+                <p style="color:var(--ink-soft);margin-bottom:16px;line-height:1.85;">
+                    Adon Gospel Church Ministry is a national ecclesiastical ministry established in 2025 under the leadership of the Archbishop Rt. Rev. T. Nathaniel Naik, with a sacred mandate to strengthen the Church, nurture its ministers, establish Christian communities, and extend the compassionate ministry of Christ throughout India.
+                </p>
+                
+                <blockquote style="font-style:italic;color:var(--ink-soft);margin:16px 0;border-left:4px solid #1f4a3d;padding-left:20px;">
+                    “Follow Me, and I will make you become fishers of men.” — Mark 1:17
+                </blockquote>
+                
+                <p style="color:var(--ink-soft);margin-bottom:16px;line-height:1.85;">
+                    This calling stands at the heart of our identity. We seek to follow Christ faithfully and to prepare those entrusted with the ministry of the Church to become effective servants and witnesses of the Gospel. Our particular commitment is to safeguard, strengthen, and equip pastors and Christian ministers with sound biblical knowledge, theological understanding, spiritual guidance, and practical support, enabling them to fulfil their sacred calling with faithfulness and integrity.
+                </p>
+                
+                <p style="color:var(--ink-soft);margin-bottom:24px;line-height:1.85;">
+                    We are equally committed to the establishment and strengthening of churches, the proclamation of the Gospel, and the development of Christ‑centred communities throughout India. At the same time, we seek to demonstrate the compassion of Christ through practical service to the poor and vulnerable, and through assistance to communities facing adversity, disasters, and other crises.
+                </p>
+                
+                <a href="ministries.php" class="btn-primary"><i class="fas fa-arrow-right"></i> Explore Our Ministries</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CORE VALUES SECTION ===== -->
+<section class="section tint core-values-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">What We Believe</span>
+            <h2 class="section-title">Our core values</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal"><div class="feature-icon teal"><i class="fas fa-bible"></i></div><h3>Bible‑Centered</h3><p>We teach faithfully from Scripture.</p></div>
+            <div class="feature-card reveal" style="transition-delay:0.05s;"><div class="feature-icon amber"><i class="fas fa-hands-praying"></i></div><h3>Prayerful</h3><p>We depend on God in all things.</p></div>
+            <div class="feature-card reveal" style="transition-delay:0.1s;"><div class="feature-icon blue"><i class="fas fa-people-group"></i></div><h3>Community</h3><p>We do life together, side by side.</p></div>
+            <div class="feature-card reveal" style="transition-delay:0.15s;"><div class="feature-icon rose"><i class="fas fa-globe"></i></div><h3>Missions</h3><p>We share the Good News near and far.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== VISION & MISSION SECTION (ENHANCED) ===== -->
+<style>
+    .vm-section {
+        position: relative;
+        background: #ffffff;
+        overflow: hidden;
+    }
+    .vm-section::before {
+        content: none;
+    }
+    .vm-section::after {
+        content: none;
+    }
+    .vm-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    @media (max-width: 900px) {
+        .vm-grid { grid-template-columns: 1fr; }
+    }
+    .vm-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 40px 36px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(15,118,110,0.08);
+        border: 1px solid rgba(15,118,110,0.08);
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .vm-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 22px 50px rgba(15,118,110,0.16);
+    }
+    .vm-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        border-radius: 20px 20px 0 0;
+    }
+    .vm-card.vision-card::before {
+        background: linear-gradient(90deg, #0d9488, #14b8a6, #5eead4);
+    }
+    .vm-card.mission-card::before {
+        background: linear-gradient(90deg, #d97706, #f59e0b, #fcd34d);
+    }
+    .vm-card-icon-wrap {
+        width: 68px;
+        height: 68px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        margin-bottom: 22px;
+        position: relative;
+    }
+    .vision-card .vm-card-icon-wrap {
+        background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+        color: #0f766e;
+        box-shadow: 0 8px 20px rgba(13,148,136,0.18);
+    }
+    .mission-card .vm-card-icon-wrap {
+        background: linear-gradient(135deg, #fef3c7, #fde68a);
+        color: #b45309;
+        box-shadow: 0 8px 20px rgba(245,158,11,0.18);
+    }
+    .vm-card h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 0 0 6px;
+        color: #0b2d2a;
+        letter-spacing: -0.01em;
+    }
+    .vm-card .vm-card-sub {
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        display: block;
+    }
+    .vision-card .vm-card-sub { color: #0d9488; }
+    .mission-card .vm-card-sub { color: #d97706; }
+    .vm-card p {
+        color: #475569;
+        line-height: 1.85;
+        margin: 0;
+        font-size: 1rem;
+    }
+    .vm-card-accent {
+        position: absolute;
+        bottom: -30px;
+        right: -30px;
+        font-size: 8rem;
+        opacity: 0.04;
+        color: #0b2d2a;
+        pointer-events: none;
+        line-height: 1;
+    }
+    .vm-section .section-header {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+<section class="section vm-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Our Direction</span>
+            <h2 class="section-title">Vision &amp; Mission</h2>
+            <p class="section-subtitle">The calling that shapes everything we do as a Church.</p>
+        </div>
+        <div class="vm-grid">
+            <div class="vm-card vision-card reveal-left">
+                <div class="vm-card-icon-wrap">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Our Vision</h3>
+                <span class="vm-card-sub">What we long to see</span>
+                <p>
+                    To see a steadfast and spiritually strengthened Church throughout India, where pastors and Christian ministers are protected, encouraged, and equipped with sound biblical and theological knowledge to fulfil their sacred calling; where churches are established and strengthened upon the truth of Scripture; and where the Gospel of Jesus Christ is faithfully proclaimed and expressed through compassionate service to communities, particularly in times of adversity, persecution, poverty, and disaster.
+                </p>
+                <span class="vm-card-accent"><i class="fas fa-eye"></i></span>
+            </div>
+            <div class="vm-card mission-card reveal-right">
+                <div class="vm-card-icon-wrap">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Our Mission</h3>
+                <span class="vm-card-sub">What we are committed to do</span>
+                <p>
+                    Adon Gospel Church Ministry is committed to proclaiming the Gospel of Jesus Christ throughout India, establishing and strengthening Christ‑centred churches, and safeguarding, strengthening, and equipping pastors and Christian ministers with sound biblical knowledge, theological understanding, spiritual guidance, and practical support for the faithful fulfilment of their sacred calling. We seek to stand alongside the Church and its servants in times of adversity and persecution, while demonstrating the compassion of Christ through service to the poor and vulnerable, community development, and timely relief and rehabilitation in the face of disasters and other crises.
+                </p>
+                <span class="vm-card-accent"><i class="fas fa-bullseye"></i></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<!-- <section class="section">
+    <div class="container">
+        <div class="cta-banner reveal">
+            <h2>Curious to meet our pastoral team?</h2>
+            <p>Get to know the people who lead and shepherd our congregation.</p>
+            <a href="pastors.php" class="btn-white"><i class="fas fa-users"></i> Meet Our Pastors</a>
+        </div>
+    </div>
+</section> -->
+
+<?php include 'inc/footer.php'; ?>
