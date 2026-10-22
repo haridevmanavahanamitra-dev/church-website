@@ -24,7 +24,7 @@ include 'inc/header.php';
                     'images/g_1.jpeg',
                     'images/g_2.jpeg',
                     'images/g_3.jpeg',
-                    'images/g_4.jpeg',
+                    // 'images/g_4.jpeg',
                     'images/g_5.jpeg',
                     'images/g_6.jpeg',
                     'images/g_7.jpeg',
