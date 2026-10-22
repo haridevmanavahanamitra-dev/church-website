@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adon Gospel Church Ministry | Home</title>
+    <meta name="description" content="Adon Gospel Church Ministry is a community of faith, hope, and love. Join us for worship, biblical teaching, and service.">
+    <link rel="icon" type="image/png" href="images/a_logo_transparent.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=support_agent">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="inc/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.0/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div id="preloader">
+    <div class="preloader-content">
+        <div class="preloader-image">
+            <img src="images\n_logo-no_bg.png" alt="Adon Gospel Church Ministry logo">
+        </div>
+        <div class="preloader-logo">Adon Gospel Church Ministry</div>
+        <div class="preloader-bar"></div>
+        <div class="preloader-text">Loading</div>
+    </div>
+</div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a class="logo" href="index.html" aria-label="Adon Gospel Church Ministry home">
+                <img class="site-logo-image" src="images\n_logo-no_bg.png" alt="Adon Gospel Church Ministry logo">
+                <span class="logo-word">Adon Gospel Church Ministry</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a class="mobile-nav-brand" href="index.html" aria-label="Adon Gospel Church Ministry home">
+                    <img src="images\n_logo-no_bg.png" alt="">
+                    <span>Adon Gospel Church Ministry</span>
+                </a>
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="about.html" class="nav-link ">About</a>
+                <a href="locations.html" class="nav-link ">Locations</a>
+                <a href="ministries.html" class="nav-link ">Ministries</a>
+                <a href="resources.html" class="nav-link ">Resources</a>
+                <!-- <a href="counselling.html" class="nav-link ">Counseling</a> -->
+                <!-- <a href="faq.html" class="nav-link ">FAQ</a> -->
+                <a href="contact.html" class="nav-link ">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="btn-apply-nav" href="watch-online.html" aria-label="Watch Online">
+                    <i class="fas fa-play"></i> Watch Online
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+<style>
+    :root {
+        --adone-ink: #0f1b3d;
+        --adone-blue: #1749c9;
+        --adone-blue-dark: #0f1b3d;
+        --adone-blue-light: #a9c5ff;
+        --adone-cream: #ffffff;
+        --adone-muted: #65736c;
+    }
+
+    .adone-home {
+        overflow: hidden;
+        background: var(--adone-cream);
+        color: var(--adone-ink);
+    }
+    .adone-container {
+        width: min(1160px, calc(100% - 48px));
+        margin: 0 auto;
+    }
+    .adone-hero {
+        position: relative;
+        min-height: min(690px, calc(100svh - 88px));
+        display: grid;
+        align-items: center;
+        isolation: isolate;
+        color: #fff;
+        background: var(--adone-blue-dark);
+    }
+    .adone-hero::before {
+        position: absolute;
+        z-index: -2;
+        inset: 0;
+        content: "";
+        background:
+            linear-gradient(90deg, rgba(15, 27, 61, .94) 0%, rgba(15, 27, 61, .78) 48%, rgba(15, 27, 61, .24) 100%),
+            url("images/photo-1548625149-fc4a29cf7092.avif") center 42% / cover;
+    }
+    .adone-hero::after {
+        position: absolute;
+        z-index: -1;
+        inset: auto 0 0;
+        height: 110px;
+        content: "";
+        background: linear-gradient(transparent, rgba(15, 27, 61, .38));
+        pointer-events: none;
+    }
+    .adone-hero-content {
+        max-width: 760px;
+        padding: 88px 0 102px;
+    }
+    .adone-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        color: var(--adone-blue-light);
+        font-size: .76rem;
+        font-weight: 700;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+    }
+    .adone-eyebrow::before {
+        width: 30px;
+        height: 1px;
+        background: currentColor;
+        content: "";
+    }
+    .adone-hero h1 {
+        max-width: 740px;
+        margin: 0;
+        color: #fff;
+        font-family: var(--font-display);
+        font-size: clamp(3.2rem, 7vw, 6.1rem);
+        font-weight: 500;
+        letter-spacing: -.045em;
+        line-height: 1.02;
+    }
+    .adone-hero h1 span { color: var(--adone-blue-light); font-style: italic; }
+    .adone-hero-copy {
+        max-width: 610px;
+        margin: 25px 0 0;
+        color: rgba(255,255,255,.82);
+        font-size: clamp(1rem, 1.5vw, 1.14rem);
+        line-height: 1.8;
+    }
+    .adone-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 34px;
+    }
+    .adone-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 52px;
+        padding: 0 23px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        font: inherit;
+        font-size: .91rem;
+        font-weight: 700;
+        transition: transform .22s ease, background .22s ease, border-color .22s ease;
+    }
+    .adone-button:hover { transform: translateY(-2px); }
+    .adone-button-primary { background: var(--adone-blue); color: #fff; }
+    .adone-button-primary:hover { background: #123ba5; }
+    .adone-button-ghost { border-color: rgba(255,255,255,.48); color: #fff; }
+    .adone-button-ghost:hover { border-color: #fff; background: rgba(255,255,255,.1); }
+    .adone-hero-note {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 54px;
+        color: rgba(255,255,255,.7);
+        font-size: .82rem;
+        letter-spacing: .04em;
+    }
+    .adone-hero-note i { color: var(--adone-blue-light); }
+
+    .adone-intro {
+        padding: 100px 0 92px;
+        background: #fff;
+    }
+    .adone-section-heading {
+        max-width: 690px;
+        margin-bottom: 42px;
+    }
+    .adone-section-heading .adone-eyebrow { color: var(--adone-blue); }
+    .adone-section-heading h2 {
+        margin: 0;
+        color: var(--adone-ink);
+        font-size: clamp(2.2rem, 4.4vw, 3.7rem);
+        font-weight: 500;
+        letter-spacing: -.035em;
+        line-height: 1.1;
+    }
+    .adone-section-heading p {
+        margin: 17px 0 0;
+        color: var(--adone-muted);
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .adone-values {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .adone-value-card {
+        min-height: 228px;
+        padding: 30px;
+        border: 1px solid #e6e9e3;
+        border-radius: 9px;
+        background: #fff;
+        transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+    }
+    .adone-value-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--adone-blue-light);
+        box-shadow: 0 20px 45px rgba(15, 27, 61, .09);
+    }
+    .adone-value-icon {
+        display: grid;
+        width: 46px;
+        height: 46px;
+        margin-bottom: 24px;
+        place-items: center;
+        border-radius: 50%;
+        background: #e8edf8;
+        color: var(--adone-blue);
+        font-size: 1rem;
+    }
+    .adone-value-card h3 { margin: 0 0 10px; font-size: 1.35rem; font-weight: 600; }
+    .adone-value-card p { margin: 0; color: var(--adone-muted); font-size: .92rem; line-height: 1.75; }
+
+    .adone-watch {
+        padding: 28px 0 96px;
+        background: #fff;
+    }
+    .adone-watch-panel {
+        position: relative;
+        display: flex;
+        min-height: 320px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        overflow: hidden;
+        padding: 54px 62px;
+        border-radius: 12px;
+        background:
+            radial-gradient(ellipse at 85% 18%, rgba(169,197,255,.2), transparent 32%),
+            linear-gradient(115deg, #0f1b3d, #1749c9);
+        color: #fff;
+    }
+    .adone-watch-panel::after {
+        position: absolute;
+        right: 20%;
+        bottom: -170px;
+        width: 360px;
+        height: 360px;
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 50%;
+        box-shadow: 0 0 0 35px rgba(255,255,255,.035), 0 0 0 70px rgba(255,255,255,.025);
+        content: "";
+        pointer-events: none;
+    }
+    .adone-watch-copy { position: relative; z-index: 1; max-width: 600px; }
+    .adone-watch-copy .adone-eyebrow { color: var(--adone-blue-light); }
+    .adone-watch-copy h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.15rem); font-weight: 500; line-height: 1.12; }
+    .adone-watch-copy p { max-width: 520px; margin: 15px 0 0; color: rgba(255,255,255,.78); line-height: 1.75; }
+    .adone-watch-panel .adone-button { position: relative; z-index: 1; flex: 0 0 auto; }
+
+    .adone-leadership {
+        padding: 96px 0;
+        background: var(--adone-cream);
+    }
+    .adone-leader-card {
+        display: grid;
+        grid-template-columns: minmax(230px, .8fr) 1.2fr;
+        align-items: center;
+        gap: clamp(30px, 7vw, 82px);
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    .adone-leader-photo {
+        overflow: hidden;
+        aspect-ratio: 4 / 5;
+        border-radius: 160px 160px 12px 12px;
+        background: #e2e7e0;
+        box-shadow: 16px 16px 0 #d3ddf1;
+    }
+    .adone-leader-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .adone-leader-copy .adone-eyebrow { color: var(--adone-blue); }
+    .adone-leader-copy h2 { margin: 0; font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 500; line-height: 1.08; }
+    .adone-leader-role { margin: 11px 0 21px; color: var(--adone-blue); font-size: .87rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .adone-leader-copy blockquote {
+        margin: 0;
+        padding-left: 19px;
+        border-left: 2px solid var(--adone-blue);
+        color: #58645d;
+        font-family: var(--font-display);
+        font-size: 1.22rem;
+        font-style: italic;
+        line-height: 1.65;
+    }
+    .adone-leader-copy .adone-button { margin-top: 25px; }
+    .adone-button-dark { background: var(--adone-blue); color: #fff; }
+    .adone-button-dark:hover { background: #123ba5; }
+
+    .adone-learning {
+        padding: 96px 0;
+        background: #fff;
+    }
+    .adone-learning-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .adone-learning-card {
+        padding: 27px;
+        border-radius: 8px;
+        background: var(--adone-cream);
+    }
+    .adone-learning-card span { color: var(--adone-blue); font-size: .77rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .adone-learning-card h3 { margin: 14px 0 9px; font-size: 1.35rem; font-weight: 600; }
+    .adone-learning-card p { margin: 0; color: var(--adone-muted); font-size: .91rem; line-height: 1.7; }
+    .adone-learning-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 17px;
+        color: var(--adone-blue);
+        font-size: .88rem;
+        font-weight: 700;
+    }
+    .adone-learning-link:hover { gap: 12px; }
+
+    .adone-contact {
+        padding: 72px 0;
+        background: var(--adone-cream);
+        text-align: center;
+    }
+    .adone-contact h2 { margin: 0; color: var(--adone-blue); font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 500; }
+    .adone-contact p { margin: 12px auto 24px; color: var(--adone-muted); }
+    .adone-contact .adone-button { margin: 0 auto; }
+
+    .adone-reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.25,1);
+    }
+    .adone-reveal.is-visible { opacity: 1; transform: none; }
+
+    /* ===== Latest News ===== */
+    .adone-news {
+        padding: 96px 0;
+        background: #fff;
+    }
+    .adone-news-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .adone-news-card {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        border: 1px solid #e6e9e3;
+        border-radius: 9px;
+        background: #fff;
+        transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+    }
+    .adone-news-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--adone-blue-light);
+        box-shadow: 0 20px 45px rgba(15, 27, 61, .09);
+    }
+    .adone-news-body {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        padding: 27px;
+    }
+    .adone-news-body .adone-news-date {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 12px;
+        color: var(--adone-blue);
+        font-size: .77rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+    .adone-news-card h3 {
+        margin: 0 0 10px;
+        color: var(--adone-ink);
+        font-size: 1.32rem;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .adone-news-card p {
+        margin: 0;
+        color: var(--adone-muted);
+        font-size: .91rem;
+        line-height: 1.72;
+    }
+
+    @media (max-width: 760px) {
+        .adone-container { width: min(100% - 36px, 620px); }
+        .adone-hero { min-height: 620px; min-height: min(680px, calc(100svh - 76px)); }
+        .adone-hero::before {
+            background:
+                linear-gradient(90deg, rgba(15,27,61,.91), rgba(15,27,61,.64)),
+                url("images/photo-1548625149-fc4a29cf7092.avif") center / cover;
+        }
+        .adone-hero-content { padding: 74px 0 82px; }
+        .adone-hero h1 { font-size: clamp(3rem, 12vw, 5rem); }
+        .adone-hero-note { margin-top: 38px; }
+        .adone-intro, .adone-leadership, .adone-learning { padding: 72px 0; }
+        .adone-values, .adone-learning-grid { grid-template-columns: 1fr; }
+        .adone-value-card { min-height: auto; }
+        .adone-watch { padding: 0 0 72px; }
+        .adone-watch-panel { min-height: auto; align-items: flex-start; flex-direction: column; padding: 36px 27px; }
+        .adone-leader-card { grid-template-columns: minmax(0, 1fr); gap: 35px; }
+        .adone-leader-photo { width: min(340px, 82%); margin: 0 auto; }
+    }
+    @media (max-width: 480px) {
+        .adone-container { width: calc(100% - 32px); }
+        .adone-hero-content { padding: 62px 0 70px; }
+        .adone-hero h1 { font-size: clamp(2.8rem, 13vw, 4rem); }
+        .adone-hero-copy { font-size: .96rem; }
+        .adone-actions { align-items: stretch; flex-direction: column; }
+        .adone-button { width: 100%; }
+        .adone-hero-note { align-items: flex-start; font-size: .76rem; }
+        .adone-section-heading { margin-bottom: 30px; }
+        .adone-value-card, .adone-learning-card { padding: 24px; }
+    }
+    @media (max-width: 760px) {
+        .adone-news { padding: 72px 0; }
+        .adone-news-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+        .adone-news-body { padding: 24px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .adone-reveal, .adone-button, .adone-value-card, .adone-learning-link, .adone-news-card {
+            transition-duration: .01ms !important;
+        }
+        .adone-reveal { opacity: 1; transform: none; }
+    }
+</style>
+
+<div class="adone-home">
+    <section class="adone-hero" aria-labelledby="adone-hero-title">
+        <div class="adone-container">
+            <div class="adone-hero-content">
+                <span class="adone-eyebrow">Faith · Hope · Community</span>
+                <h1 id="adone-hero-title">Welcome to <span>Adon Gospel Church Ministry.</span></h1>
+                <p class="adone-hero-copy">A place to worship, grow in faith, and serve one another. We are glad you are here.</p>
+                <div class="adone-actions">
+                    <a class="adone-button adone-button-primary" href="watch-online.html">
+                        <i class="fas fa-play" aria-hidden="true"></i> Watch Online
+                    </a>
+                    <a class="adone-button adone-button-ghost" href="#our-story">Discover our church <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+                </div>
+                <div class="adone-hero-note"><i class="fas fa-cross" aria-hidden="true"></i> “Follow me, and I will make you become fishers of men.” — Mark 1:17</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adone-intro" id="our-story" aria-labelledby="adone-story-title">
+        <div class="adone-container">
+            <div class="adone-section-heading adone-reveal">
+                <span class="adone-eyebrow">Who we are</span>
+                <h2 id="adone-story-title">A church shaped by the love of Christ.</h2>
+                <p>Adon Gospel Church Ministry is a community seeking to follow Jesus through worship, biblical teaching, and compassionate service. There is a place for you here.</p>
+            </div>
+            <div class="adone-values">
+                <article class="adone-value-card adone-reveal">
+                    <span class="adone-value-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                    <h3>Rooted in Scripture</h3>
+                    <p>We grow together through the teaching of the Bible and the good news of Jesus Christ.</p>
+                </article>
+                <article class="adone-value-card adone-reveal">
+                    <span class="adone-value-icon"><i class="fas fa-hands-holding-circle" aria-hidden="true"></i></span>
+                    <h3>Growing in community</h3>
+                    <p>We encourage one another in faith and make room for people at every stage of life.</p>
+                </article>
+                <article class="adone-value-card adone-reveal">
+                    <span class="adone-value-icon"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                    <h3>Serving with compassion</h3>
+                    <p>We seek to share Christ’s care through practical service to our neighbors.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="adone-watch" aria-labelledby="adone-watch-title">
+        <div class="adone-container">
+            <div class="adone-watch-panel adone-reveal">
+                <div class="adone-watch-copy">
+                    <span class="adone-eyebrow">Join us from anywhere</span>
+                    <h2 id="adone-watch-title">Worship with us online.</h2>
+                    <p>Take a moment to watch and share in worship with the Adon Gospel Church Ministry community.</p>
+                </div>
+                <a class="adone-button adone-button-primary" href="watch-online.html">
+                    <i class="fas fa-play" aria-hidden="true"></i> Watch Online
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="adone-leadership" aria-labelledby="adone-leader-title">
+        <div class="adone-container">
+            <div class="adone-leader-card">
+                <div class="adone-leader-photo adone-reveal">
+                    <img src="images/Rt. Rev. T. Nathaniel naik.jpeg" alt="Rt. Rev. T. Nathaniel Naik">
+                </div>
+                <div class="adone-leader-copy adone-reveal">
+                    <span class="adone-eyebrow">A message from our Founder &amp; Pastor</span>
+                    <h2 id="adone-leader-title">The Rt. Rev. T. Nathaniel Nail</h2>
+                    <p class="adone-leader-role">Founder &amp; Pastor</p>
+                    <blockquote>“Not by might nor by power, but by my Spirit,” says the Lord Almighty. — Zechariah 4:6</blockquote>
+                    <a class="adone-button adone-button-dark" href="bishop-message.html">Read the message <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adone-news" id="latest-news" aria-labelledby="adone-news-title">
+        <div class="adone-container">
+            <div class="adone-section-heading adone-reveal">
+                <span class="adone-eyebrow">Stay connected</span>
+                <h2 id="adone-news-title">Latest news &amp; announcements.</h2>
+                <p>News, events, and stories from the life of Adon Gospel Church Ministry. See what God is doing among us and find your place in it.</p>
+            </div>
+            <div class="adone-news-grid">
+                <article class="adone-news-card adone-reveal">
+                    <div class="adone-news-body">
+                        <p class="adone-news-date"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2026-10-12">12 October 2026</time></p>
+                        <h3>Harvest Thanksgiving Service</h3>
+                        <p>Join us as we give thanks to God for his provision at our annual Harvest Thanksgiving Service, with a special choir presentation and a shared fellowship meal afterwards.</p>
+                    </div>
+                </article>
+
+                <article class="adone-news-card adone-reveal">
+                    <div class="adone-news-body">
+                        <p class="adone-news-date"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2026-09-28">28 September 2026</time></p>
+                        <h3>New Believers’ Baptism and Confirmation</h3>
+                        <p>Members of our congregation will be baptised and confirmed in Christ. Let us come alongside them in prayer as they take this joyful step of faith.</p>
+                    </div>
+                </article>
+
+                <article class="adone-news-card adone-reveal">
+                    <div class="adone-news-body">
+                        <p class="adone-news-date"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2026-09-05">5 September 2026</time></p>
+                        <h3>Community Food and Clothing Drive</h3>
+                        <p>Our outreach team is collecting non-perishable food and warm clothing for families in our neighbourhood. Donations can be brought to the church hall throughout the month.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="adone-learning" aria-labelledby="adone-learning-title">
+        <div class="adone-container">
+            <div class="adone-section-heading adone-reveal">
+                <span class="adone-eyebrow">Learn and grow</span>
+                <h2 id="adone-learning-title">Explore the faith more deeply.</h2>
+                <p>Discover biblical and theological learning to support a lifelong walk with Christ.</p>
+            </div>
+            <div class="adone-learning-grid">
+                <article class="adone-learning-card adone-reveal">
+                    <span>Old Testament</span>
+                    <h3>OT Theology</h3>
+                    <p>Explore God’s revelation from creation through the prophets.</p>
+                    <a class="adone-learning-link" href="courses.html">Explore courses <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+                <article class="adone-learning-card adone-reveal">
+                    <span>New Testament</span>
+                    <h3>NT Theology</h3>
+                    <p>Study the fulfilment of Scripture in Christ and the apostles’ teaching.</p>
+                    <a class="adone-learning-link" href="courses.html">Explore courses <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+                <article class="adone-learning-card adone-reveal">
+                    <span>Christian living</span>
+                    <h3>Pauline Letters</h3>
+                    <p>Explore the letters of Paul and their enduring guidance for the Church.</p>
+                    <a class="adone-learning-link" href="courses.html">Explore courses <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="adone-contact" aria-labelledby="adone-contact-title">
+        <div class="adone-container adone-reveal">
+            <h2 id="adone-contact-title">We’d love to hear from you.</h2>
+            <p>Questions, prayer requests, or just want to say hello? Get in touch.</p>
+            <a class="adone-button adone-button-dark" href="contact.html">Contact Adon Gospel Church Ministry <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+    </section>
+</div>
+
+<script>
+    (function () {
+        const revealElements = document.querySelectorAll('.adone-reveal');
+        if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const observer = new IntersectionObserver(function (entries, activeObserver) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        activeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            revealElements.forEach(function (element) { observer.observe(element); });
+        } else {
+            revealElements.forEach(function (element) { element.classList.add('is-visible'); });
+        }
+    })();
+</script>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img class="footer-logo-image" src="images\n_logo-no_bg.png" alt="Adon Gospel Church Ministry logo">
+                    <span>Adon Gospel Church Ministry</span>
+                </div>
+                <p>A community of faith, hope, and love serving Andhra Pradesh. Join us as we grow together &mdash; everyone is welcome.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="https://www.instagram.com/eaci_2025/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
+                    <a href="https://www.youtube.com/@adongospelchurchministry" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    
+                </ul>
+            </div>
+            <!-- <div>
+                <h4>Get Involved</h4>
+                <ul class="footer-links">
+                <li><a href="pastors.html">Pastors</a></li>
+                     <li><a href="counselling.html">Counseling</a></li>
+                    <li><a href="faq.html">FAQ</a></li> 
+                </ul>
+            </div> -->
+            <div class="footer-address-column">
+                <h4>Address</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> D. No. 3-457, Pedamadduru,<br> Amaravati, Palnadu Dist,<br> PIN - 522 020,<br> Andhra Pradesh</li>
+                </ul>
+            </div>
+            <div class="footer-contact-column">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> +91 9701483103</li>
+                    <li><i class="fas fa-envelope"></i> adonchurchministry@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Regd. No.: TEST-0000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Adon Gospel Church Ministry. All Rights Reserved.</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="inc/script.js"></script>
+</body>
+</html>
